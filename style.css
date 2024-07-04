@@ -1,0 +1,449 @@
+/* *st common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clr{
+    clear: both;
+}
+ol, ul{
+    list-style: none;
+}
+
+a{ 
+    text-decoration: none;
+}
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+img{
+    vertical-align: middle;
+}
+body, html{
+    scroll-behavior: smooth;
+}
+/* *end common css */
+.main{
+    background: linear-gradient(to right, #020024, #090979, #00d4ff);
+    
+}
+
+.background{
+    width: 1320px;
+    margin: 0 auto;
+    position: fixed;
+    background: linear-gradient(to left, #020024, #090979, #00d4ff);
+    z-index: 999;
+}
+
+
+.logo{
+    width: 30%;
+    float: left;
+}
+
+.logo img{
+    width: 160px;
+    margin: 16px auto;
+}
+
+.menu{
+    width: 60%;
+    float: left;
+}
+
+
+.background .menu ul{
+    float: left;
+}
+
+.background .menu ul li{
+    display: inline-block;
+    position: relative;
+}
+
+.background .menu ul li a{
+    font-size: 20px;
+    color: antiquewhite;
+    line-height: 80px;
+    font-weight: 10px;
+    padding: 20px;
+    position: relative;
+    transition: all linear 0.4s;
+}
+.background .menu ul li a:hover{
+    color: #00d4ff;
+    padding: 30px;
+}
+
+.background .menu ul li a::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    top: 50%;
+    left: -5px;
+    background: #00d4ff;
+    transition: all linear 0.4s;
+    position: absolute;
+
+}
+.background .menu ul li a:hover::after{
+    width: 20%;  
+}
+
+.background .menu ul li ul{
+    position: absolute;
+    background: linear-gradient(to right, #020024, #090979, #00d4ff);
+    top: 88px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 150px;
+    text-align: center;
+    display: none;
+    
+}
+
+.background .menu ul li:hover >ul{
+    display: block;
+}
+
+.background.menu ul li ul li{
+    display: block;
+    line-height: 5px;
+}
+.background .menu ul li ul li a{
+    line-height: 30px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Rancho", cursive;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+/* *end navigation menu bar */
+
+
+/* *banner start */
+#banner{
+    background: linear-gradient(to left, #020024, #090979, #00d4ff);
+    height: 100vh;
+    padding-top: 100px;
+    
+}
+
+.banner-text{
+    width: 70%;
+    float: left;
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 20px;
+    
+}
+
+.banner-text h1{
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+.banner-text a{
+    margin-right: 15px;
+    padding: 10px 20px;
+    margin-top: 40px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #020024, #090979, #00d4ff);
+    box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.356);
+    transition: all linear 0.4s;
+    position: relative;
+    top: 0;
+    color: antiquewhite;
+}
+.banner-text a:hover{
+    top: -10px;
+    background: linear-gradient(to left, #020024, #090979, #00d4ff);
+}
+#banner .banner-img{
+    
+    width: 30%;
+    float: left;
+    padding-top: 5px;
+    animation: move 3s infinite alternate
+}
+
+#banner .banner-img:hover{
+    animation-play-state: paused;
+}
+#banner .banner-img img{
+    height: 300px;
+}
+@keyframes move {
+    from{
+        padding-top: 5px;
+    }
+    to{
+        padding: 40px;
+    }
+}
+
+/* *banner end */
+
+/* about st */
+#about{
+    background: antiquewhite;
+    padding: 50px;
+    margin-bottom: 100px;
+    
+    
+}
+
+.about-img{
+    width: 30%;
+    float: left;
+    padding: 50px;
+}
+.about-img img{
+    width: 300px;
+    padding: 20px;
+}
+.about-text{
+    width: 70%;
+    float: left;
+}
+.about-text .sec-heading{
+    text-align: center;
+}
+.about-text p{
+    
+    margin-bottom: 30px;
+}
+
+.about-text a{
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+    background: linear-gradient(to right, #020024, #090979, #00d4ff);
+    box-shadow: 2px 5px 10px 1px rgba(0, 0, 0, 0.356);
+    transition: all linear 0.4s;
+    position: relative;
+    top: 0;
+    color: antiquewhite;
+}
+
+.about-text a:hover{
+    top: -10px;
+    background: linear-gradient(to left, #020024, #090979, #00d4ff);
+}
+
+/* about end */
+
+/* *tutorial st */
+
+#tutorial{
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 50px;
+}
+
+.video{
+    background-image: url(images/blue3.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+    margin: 30px auto;
+    box-shadow: 0 0 15px 3px;
+}
+
+.video .video-overlay{
+    background-color: rgba(0, 0, 0, 0.6) ;
+    width: 100%;
+    height: 300px;
+    display: table;
+}
+.video .video-overlay a{
+    font-size: 50px;
+    color: antiquewhite;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+#tutorial .step-one{
+    margin-top: 30px;
+    width: 25%;
+    float: left;
+    background-color: antiquewhite;
+    margin-right: 3%;
+    padding: 25px;
+    text-align: center;
+    
+   
+}
+/* *tutorial end */
+/* features st */
+
+#features{
+    padding: 100px 0;
+    margin-bottom: 100px;
+    background: rgb(245, 238, 238)
+}
+#features .sec-head{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.features-body{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.features-col1{
+    width: 40%;
+    float: left;
+}
+
+.features-col1 img{
+    height: 400px;
+}
+.features-col2, .features-col3{
+    width: 30%;
+    float: left;
+}
+ 
+#features .features-text h5{
+    font-size: 20px;
+}
+.features-iteam{
+    padding: 10px;
+}
+
+.features-icon{
+    float:  left;
+    width: 20%;
+}
+.features-icon i{
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to left, #020024, #090979, #00d4ff);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px; 
+    position: relative;
+    z-index: 1;
+    color: navy;
+    
+}
+.features-icon i::after{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all linear 0.4s;
+
+}
+.features-icon i:hover::after{
+    
+    background: transparent   
+}
+.features-icon i:hover{
+    color: antiquewhite;
+}
+
+.features-text{
+    float: left;
+    width: 80%;
+}
+
+/* features end */
+
+/* team parts st*/
+#team{
+    margin-bottom: 200px;
+    
+}
+#team .sec-head{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#team .members{
+    width: 20%;
+    float: left;
+    margin: 2%;
+    
+    position: relative;
+    overflow: hidden;
+}
+
+#team .members img{
+    width: 100%;
+    transition: all linear 0.4s;
+}
+
+#team .members .member-overlay{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 50%;
+    background: linear-gradient(to right, rgb(2, 0, 36, 0.5), rgb(9, 9, 121, 0.5), rgb(0, 212, 255, 0.5));
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+#team .members:hover  .member-overlay{
+    opacity: 1;
+}
+
+#team .members:hover img{
+    transform: scale(1.1);
+}
+#team .members .member-overlay i{
+    color: antiquewhite;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 50%;
+    line-height: 25px;
+    border: 2px solid antiquewhite;
+}
+
+#team .members .member-overlay i:hover{
+    background-color: #00d4ff;
+}
+/* team parts end*/
+
+.map{
+    width: 100%;
+    height: 600px;
+    background-color: red;
+}
+
+.subscribe h4{
+    float: left;
+    display: inline-block;
+}
+
+.subscribe form{
+    float:left;
+}
+
+.subscribe input .subscribe{
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+}
